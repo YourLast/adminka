@@ -1,0 +1,683 @@
+/* Main container for sales statistics | Основной контейнер для статистики продаж */
+.main-contener-sales-statistics {
+  width: 100%; /* Full width | Полная ширина */
+  border: 1px #AAC8FF solid; /* Solid border with color #AAC8FF | Сплошная граница с цветом #AAC8FF */
+  box-sizing: border-box; /* Include padding and border in element's total width and height | Включить отступы и границу в общую ширину и высоту элемента */
+  padding: 35px 28px; /* Padding: 35px top and bottom, 28px left and right | Отступ: 35px сверху и снизу, 28px слева и справа */
+  border-radius: 38px; /* Rounded corners with 38px radius | Закругленные углы с радиусом 38px */
+  margin: 20px 0;
+}
+
+/* Background image styling | Стили для фонового изображения */
+.background-img-main {
+  background: url('/src/img/fone-main.jpeg') no-repeat center/cover;  /* Set background image | Установить фоновое изображение */
+}
+
+/* Responsive settings for different screen sizes | Адаптивные настройки для различных размеров экранов */
+
+/* Dashboard grid with 4 columns | Сетка дашборда с 4 колонками */
+.dashboard-grid {
+  display: grid; /* Use CSS Grid layout | Использовать CSS Grid */
+  grid-template-columns: repeat(4, 1fr); /* Always 4 cards in a row | Всегда 4 карточки в строке */
+  gap: 20px; /* Gap between cards | Расстояние между карточками */
+  width: 100%; /* Full width of the grid | Полная ширина сетки */
+  padding: 20px; /* Padding around the grid | Отступ вокруг сетки */
+  box-sizing: border-box; /* Include padding and border in element's total width and height | Включить отступы и границу в общую ширину и высоту элемента */
+}
+
+/* Styles for the dashboard card with blur effect | Стили карточки дашборда с эффектом размытия */
+.dashboard-card {
+  display: grid; /* Use CSS Grid layout | Использовать CSS Grid */
+  grid-template-rows: auto auto 1fr; /* Layout rows inside the card | Распределение строк внутри карточки */
+  align-items: start; /* Align content to the top | Выравнивание контента по верхнему краю */
+  gap: 10px; /* Gap between elements inside the card | Расстояние между элементами внутри карточки */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background | Полупрозрачный фон */
+  backdrop-filter: blur(10px); /* Background blur effect | Эффект размытия фона */
+  -webkit-backdrop-filter: blur(10px); /* Support for Safari | Поддержка для Safari */
+  border-radius: 12px; /* Rounded corners with 12px radius | Закругленные углы с радиусом 12px */
+  padding: 20px; /* Padding inside the card | Отступ внутри карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth | Тень для глубины */
+  text-align: left; /* Align text to the left | Выравнивание текста по левому краю */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition effects for hover | Эффекты перехода для ховера */
+  color: #000; /* Default text color | Цвет текста по умолчанию */
+}
+
+/* Hover effects for the card | Ховер-эффекты для карточки */
+.dashboard-card:hover {
+  transform: translateY(-5px); /* Move card up by 5px on hover | Переместить карточку вверх на 5px при наведении */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover | Усилить тень при наведении */
+}
+
+/* Styles for the card value with Inter font | Стили для значения карточки с шрифтом Inter */
+.dashboard-card-value {
+  font-size: 28px; /* Font size 28px | Размер шрифта 28px */
+  font-weight: 900; /* Bold font weight | Полужирный шрифт */
+  font-family: 'Inter', sans-serif; /* Apply Inter font | Применение шрифта Inter */
+  color: #000; /* Text color black | Цвет текста черный */
+  max-width: max-content; /* Max width to content | Максимальная ширина по содержимому */
+}
+
+/* Styles for the change value | Стили для изменения значения */
+.dashboard-card-change {
+  font-size: 18px; /* Font size 18px | Размер шрифта 18px */
+  font-weight: 900; /* Bold font weight | Полужирный шрифт */
+  font-family: 'Inter', sans-serif; /* Apply Inter font | Применение шрифта Inter */
+  max-width: max-content; /* Max width to content | Максимальная ширина по содержимому */
+}
+
+/* Positive change color | Цвет положительного изменения */
+.dashboard-card-change.positive {
+  color: #28a745 !important; /* Green color | Зеленый цвет */
+}
+
+/* Negative change color | Цвет отрицательного изменения */
+.dashboard-card-change.negative {
+  color: #F24545; /* Red color | Красный цвет */
+}
+
+/* Styles for the card label | Стили для метки карточки */
+.dashboard-card-label {
+  font-size: 14px; /* Font size 14px | Размер шрифта 14px */
+}
+
+/* Responsive settings for 1200px width | Адаптивные настройки для ширины 1200px */
+@media (max-width: 1200px) {
+  .dashboard-grid {
+      grid-template-columns: repeat(4, 1fr); /* 4 cards in a row | 4 карточки в строке */
+  }
+}
+
+/* Responsive settings for 900px width | Адаптивные настройки для ширины 900px */
+@media (max-width: 900px) {
+  .dashboard-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards in a row | 2 карточки в строке */
+  }
+}
+
+/* Responsive settings for 535px width | Адаптивные настройки для ширины 535px */
+@media (max-width: 535px) {
+  .dashboard-grid {
+      grid-template-columns: 1fr; /* 1 card in a row | 1 карточка в строке */
+  }
+}
+
+/* Основной контейнер | Main container */
+.dashboard-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; /* Шрифт Inter */
+}
+
+/* Блок заказов | Orders block */
+.orders-block {
+  display: flex;
+  border: 1px solid #AAC8FF;
+  border-radius: 20px;
+  padding: 20px;
+  flex-grow: 1;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Заголовок | Heading */
+.orders-header h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.orders-header h2 .green {
+  color: #28a745;
+}
+
+.orders-block .orders-header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Колонки заказов | Orders columns */
+.orders-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 120px; /* Отступ для визуального выравнивания */
+}
+
+.more-column {
+  margin-left: 120px;
+  position: relative;
+}
+
+.more-column .more-heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Карточка заказа | Order card */
+.order-card {
+  display: flex; /* Располагаем содержимое карточки горизонтально | Arrange card contents horizontally */
+  align-items: center; /* Выравниваем по вертикали по центру | Vertically center items */
+  background: #fff; /* Белый фон карточки | White card background */
+  border-radius: 8px; /* Легкое скругление углов | Slightly rounded corners */
+  padding: 10px; /* Внутренние отступы | Internal padding */
+  box-shadow: 0 0 0 1px #eaeaea; /* Тонкая рамка для четкости | Subtle border for clarity */
+  gap: 10px; /* Расстояние между аватаром и текстом | Space between avatar and text */
+}
+
+.order-card .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Круглая форма для аватара | Circular avatar */
+  object-fit: cover; /* Сохранение пропорций при обрезке | Maintain aspect ratio and cover */
+}
+
+.order-info .name {
+  font-weight: 900; /* Жирный шрифт для имени | Bold font for the name */
+  font-size: 16px; /* Крупный размер шрифта для имени | Larger font size for the name */
+}
+
+.order-info .desc {
+  font-size: 14px; /* Размер шрифта для описания | Font size for the description */
+  color: #555; /* Серый цвет текста | Gray text color */
+  display: block;
+}
+
+/* Блок дохода | Income block */
+.income-block {
+  border: 1px solid #AAC8FF;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.income-header h2 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.income-header .green {
+  color: #28a745;
+}
+
+/* График дохода | Income chart */
+.income-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.chart-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.chart-column .bar {
+  width: 20px;
+  background: #AAC8FF;
+  border-radius: 20px;
+}
+
+/* Цвета текста | Text colors */
+.green {
+  color: #28a745;
+}
+
+.red {
+  color: #F24545;
+}
+
+/* Маленькие текстовые элементы | Small text elements */
+.day {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Основная сетка для двух контейнеров данных | Main grid for two data containers */
+.grid-orders-income {
+  width: 100%; /* 100% ширины родителя | 100% width of the parent */
+  display: grid; /* Включение Grid | Enable Grid */
+  grid-template-columns: 3fr 1fr; /* Первый контейнер шире, второй уже | First container wider, second narrower */
+  gap: 20px; /* Отступ между контейнерами | Space between containers */
+  margin: 20px 0;
+}
+
+.grid-orders-income > .main-contener-sales-statistics {
+  margin: 0;
+}
+
+/* Сетка внутри основного контейнера доходов | Grid inside the main income container */
+.main-grid-income {
+  display: grid; /* Включение Grid | Enable Grid */
+  grid-template-rows: auto 1fr; /* Верхняя часть под заголовок, нижняя под график | Top row for heading, bottom row for chart */
+  gap: 20px; /* Отступы между элементами | Spacing between elements */
+}
+
+.contener-hedding-orders {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mini-text-none > .positive {
+  font-size: 24px;
+}
+
+.more {
+  margin-left: auto;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.orders-grid {
+  display: grid; /* Включаем Grid для блока заказов | Enable Grid for the orders block */
+  grid-template-columns: repeat(3, 1fr); /* Три колонки равной ширины | Three equal-width columns */
+  gap: 14px; /* Отступы между карточками | Spacing between cards */
+}
+
+.income-header .green {
+  color: #28a745;
+}
+
+.main-grid-income {
+  border: 1px solid #AAC8FF;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  text-align: center; /* Центрируем заголовок | Center the heading */
+}
+
+.main-grid-income h1 {
+  font-size: 32px; /* Крупный заголовок | Large heading */
+  font-weight: 900;
+}
+
+.dashboard-card-change.positive {
+  color: #28a745; /* Зелёный цвет | Green color */
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.dashboard-card-change.negative {
+  color: #F24545; /* Красный цвет | Red color */
+  font-weight: 900;
+  font-size: 16px;
+}
+
+/* Стили для графика доходов | Styles for the income chart */
+.income-chart {
+  display: flex; /* Располагаем столбики в линию | Place bars in a row */
+  align-items: flex-end; /* Выравниваем по нижнему краю | Align to bottom */
+  gap: 30px; /* Отступ между колонками | Space between columns */
+  justify-content: center; /* Центрируем по горизонтали | Center horizontally */
+}
+
+.chart-column {
+  display: flex;
+  flex-direction: column; /* Располагаем элементы столбика по вертикали | Stack elements vertically */
+  align-items: center; /* Выравниваем по центру | Center horizontally */
+  gap: 5px;
+}
+
+.bar {
+  width: 20px;
+  background: #AAC8FF; /* Цвет столбика | Bar color */
+  border-radius: 10px; /* Закругление столбика | Rounded ends */
+}
+
+.day {
+  font-size: 14px; /* Размер для дня | Font size for the day */
+  font-weight: 900;
+}
+
+.amount {
+  font-size: 14px; /* Размер для суммы | Font size for the amount */
+  font-weight: 900;
+}
+
+.yes-today {
+  color: #F24545; /* Красный цвет | Red color */
+  font-weight: 900;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 915px) {
+  .grid-orders-income {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .orders-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Основной стиль контейнера для элементов списка задач | Main container styling for task list items */
+.mian-simple-task-list {
+  width: 100%; /* Full width of the parent container | Полная ширина родительского контейнера */
+  padding: 20px 24px; /* Inner spacing for the task list items | Внутренние отступы для элементов списка */
+  border: 1px solid #5A94FF; /* Border with a blue shade | Голубая рамка */
+  border-radius: 12px; /* Rounded corners for the task item box | Закругленные углы для блока задачи */
+  display: flex; /* Flexbox layout for alignment | Flexbox для выравнивания */
+  align-items: center; /* Center alignment of content | Центрирование содержимого по вертикали */
+  margin: 12px 0; /* Vertical spacing between task items | Вертикальный отступ между элементами списка */
+  text-decoration: none; /* Remove underline for the <a> element | Убираем подчеркивание для элемента <a> */
+  color: inherit; /* Inherit text color from parent | Наследуем цвет текста от родителя */
+}
+
+/* Heading container for sales statistics | Контейнер для заголовка статистики продаж */
+.contener-for-hedding-sales-statistics {
+  display: flex; /* Flexbox layout for alignment | Flexbox для выравнивания */
+  align-items: center; /* Center alignment of content | Центрирование содержимого по вертикали */
+}
+
+/* Circle styling for status indicators | Стиль круга для индикаторов статуса */
+.bal-task-list {
+  width: 34px; /* Circle width | Ширина круга */
+  height: 34px; /* Circle height | Высота круга */
+  border-radius: 50%; /* Make the element circular | Делаем элемент кругом */
+  margin-left: auto; /* Push the circle to the right edge | Сдвигаем круг вправо */
+}
+
+/* Green background for "good" status | Зеленый фон для статуса "good" */
+.good {
+  background-color: #28a745; /* Success green | Успешный зеленый */
+}
+
+/* Orange background for "normal" status | Оранжевый фон для статуса "normal" */
+.normal {
+  background-color: #FFA61D; /* Warning orange | Оранжевый для предупреждений */
+}
+
+/* Red background for "bad" status | Красный фон для статуса "bad" */
+.bad {
+  background-color: #F24545; /* Danger red | Красный для опасности */
+}
+
+/* Remove underline for <a> elements with class .mian-simple-task-list | Убираем подчеркивание для <a> с классом .mian-simple-task-list */
+.mian-simple-task-list {
+  text-decoration: none !important; /* Убираем подчеркивание и используем !important для приоритета */
+  color: inherit; /* Наследуем цвет текста от родителя */
+}
+
+/* Дополнительный стиль для <h3> внутри .mian-simple-task-list | Additional styling for <h3> inside .mian-simple-task-list */
+.mian-simple-task-list h3 {
+  font-size: 22px; /* Font size adjustment | Установка размера шрифта */
+  font-weight: 900; /* Set bold font | Устанавливаем жирный шрифт */
+  margin: 0; /* Remove default margins | Убираем стандартные отступы */
+  color: black; /* Set text color to black | Устанавливаем черный цвет текста */
+  text-decoration: none; /* Remove underline | Убираем подчеркивание */
+}
+
+/* Правильное целевание <h3> с классом .h-task-list | Correct targeting of <h3> with class .h-task-list */
+.h-task-list {
+  text-decoration: none !important; /* Убираем подчеркивание с помощью !important */
+  color: black; /* Устанавливаем черный цвет текста */
+}
+
+/* Add hover effect for clickable task items | Добавляем эффект наведения для кликабельных задач */
+.mian-simple-task-list:hover {
+  background-color: #f0f8ff; /* Light blue highlight | Светло-голубое выделение */
+  cursor: pointer; /* Change cursor to pointer for clarity | Изменение курсора на указатель для ясности */
+}
+
+.positive{
+  color: #28a745; /* Green color | Зеленый цвет */
+}
+
+.nula{
+  color: #BCB6B6;
+}
+/* ------ */
+.main-contener-quick-and-latest-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  align-items: baseline;
+}
+
+.left-contener-quick-and-latest-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quick-actions-contener {
+  margin-bottom: 0px;
+}
+
+.quick-actions-contener h2, 
+.right-contener-quick-and-latest-actions h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 1; /* или любой другой подходящий line-height */
+}
+
+.exchange-rates {
+  padding: 10px 15px;
+  width: auto;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentages {
+  font-size: 14px;
+  margin-left: 3px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+}
+
+.currency {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  margin: 0 10px;
+}
+
+.right-contener-quick-and-latest-actions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.buttons-group-quick-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background-color: #5C8CFA;
+  color: #fff;
+  transition: 0.3s;
+  border: 1px solid #5A94FF;
+}
+
+.btn.outline {
+  background-color: #fff;
+  color: #5C8CFA;
+  border: 1px solid #5C8CFA;
+  transition: 0.3s;
+}
+
+.primary:hover {
+  background-color: #ffffff;
+  color: #5A94FF;
+}
+
+.outline:hover {
+  background-color: #5A94FF;
+  color: #fff;
+}
+
+.contener-last-ations-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 6.5px;
+}
+
+.contener-last-ations-text-h {
+  max-width: 265px;
+  margin: 0;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contener-last-ations-text-p {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .main-contener-quick-and-latest-actions {
+    grid-template-columns: 1fr; /* На мобильных в один столбец */
+    align-items: start; /* Можно вернуть выравнивание по верхнему краю на малых экранах */
+  }
+
+  .contener-last-ations-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contener-last-ations-text-p {
+    margin-top: 10px;
+  }
+}
+
+/* News */
+
+.contenr-hedding-news{
+  display: flex;
+}
+
+.contenr-hedding-news h1:last-of-type{
+  margin-left: 8px;
+}
+
+.contenr-news-simple{
+  display: flex;
+  border-bottom: 1px solid #C0C0C0;
+  padding: 14px 0;
+}
+
+.contenr-news-simple h3:last-of-type{
+  margin-left: auto;
+}
+
+.contener-news-adminka > .contenr-news-simple:last-of-type{
+  border-bottom: 0px solid #c0c0c000;
+}
+
+.contener-last-ations > .contener-last-ations-text{
+  padding-left: 0;
+}
+
+@media screen and (max-width:1000px){
+  .btn{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width:940px){
+  .currency{
+    font-size: 14px;
+  }
+  .btn{
+    font-size: 14px;
+  }
+  .contener-last-ations-text-p{
+    font-size: 13px;
+  }
+  .contener-last-ations-text-h{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:940px){
+  .btn{
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width:890px){
+  .main-contener-quick-and-latest-actions{
+    grid-template-columns: 1fr;
+  }
+  .right-contener-quick-and-latest-actions{
+    margin-top: 0;
+  }
+  .currency{
+    font-size: 18px;
+  }
+  .btn{
+    font-size: 16px;
+  }
+  .contener-last-ations-text-p{
+    font-size: 13px;
+  }
+  .contener-last-ations-text-h{
+    font-size: 16px;
+  }
+  .inter > h3{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:500px){
+  .btn{
+    font-size: 14px;
+  }
+  .currency{
+    font-size: 15px;
+
+  }
+  .buttons-group-quick-actions{
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width:435px){
+  .buttons-group-quick-actions{
+    display: block;
+  }
+  .buttons-group-quick-actions > button:last-of-type{
+    margin-top: 8px;
+  }
+  .percentages{
+    font-size: 10px;
+  }
+  .more{
+    font-size: 20px;
+  }
+  h1{
+    font-size: 26px;
+  }
+}

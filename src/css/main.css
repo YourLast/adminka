@@ -1,0 +1,14 @@
+.grid{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.grid-main{
+  max-width: 1034px;
+  width: 100%;
+}
+

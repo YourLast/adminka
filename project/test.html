@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set document character encoding | Установка кодировки документа -->
+    <meta charset="UTF-8">
+    <!-- Configure viewport for responsive design | Настройка viewport для адаптивного дизайна -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title | Заголовок страницы -->
+    <title>Adminka | Home</title>
+    <!-- Script for dynamically loading additional code | Скрипт для динамической подгрузки дополнительного кода -->
+    <script src="/src/js/main/load-main.js" defer></script>
+    <!-- Link to the main CSS file for the Home page | Подключение основного CSS файла для страницы Home -->
+    <link rel="stylesheet" href="/src/css/home/index.css">
+</head>
+<body>
+
+    <!-- Main container of the page | Основной контейнер страницы -->
+    <main>
+        <!-- Grid layout with a maximum width of 1034px | Сетка с максимальной шириной 1034px -->
+        <div class="grid">
+            <div class="grid-main">
+                <!-- Container for sales statistics with a background image | Контейнер для статистики продаж с фоновым изображением -->
+                <div class="main-contener-sales-statistics background-img-main">
+                    <!-- Section title | Заголовок раздела -->
+                    <h1>Sales Statistics</h1>
+                    <!-- Section description | Описание раздела -->
+                    <p>Here you can view today’s statistics.</p>
+                    
+                    <!-- Dashboard grid container for analytics cards | Контейнер сетки дашборда для карточек аналитики -->
+                    <div class="dashboard-grid">
+
+                        <!-- Dashboard card for website revenue today | Карточка дашборда для доходов сайта сегодня -->
+                        <div class="dashboard-card">
+                            <!-- Card header with value and change percentage | Заголовок карточки с значением и процентом изменения -->
+                            <div class="dashboard-card-header">
+                                <span class="dashboard-card-value">1600€</span>
+                                <span class="dashboard-card-change negative">-26%</span>
+                            </div>
+                            <!-- Card label describing the metric | Описание показателя в карточке -->
+                            <span class="dashboard-card-label">Revenue on the website today</span>
+                        </div>
+
+                        <!-- Dashboard card for number of orders | Карточка дашборда для количества заказов -->
+                        <div class="dashboard-card">
+                            <div class="dashboard-card-header">
+                                <span class="dashboard-card-value">36</span>
+                                <span class="dashboard-card-change positive">+26%</span>
+                            </div>
+                            <span class="dashboard-card-label">Orders</span>
+                        </div>
+
+                        <!-- Dashboard card for products sold today | Карточка дашборда для проданных продуктов сегодня -->
+                        <div class="dashboard-card">
+                            <div class="dashboard-card-header">
+                                <span class="dashboard-card-value">120</span>
+                                <span class="dashboard-card-change positive">+26%</span>
+                            </div>
+                            <span class="dashboard-card-label">Products sold today</span>
+                        </div>
+
+                        <!-- Dashboard card for website visitors today | Карточка дашборда для посетителей сайта сегодня -->
+                        <div class="dashboard-card">
+                            <div class="dashboard-card-header">
+                                <span class="dashboard-card-value">5400</span>
+                                <span class="dashboard-card-change positive">+2%</span>
+                            </div>
+                            <span class="dashboard-card-label">Website visitors today</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Container for orders and income analytics | Контейнер для заказов и аналитики доходов -->
+                <div class="grid-orders-income">
+                    
+                    <!-- First container with orders | Первый контейнер с заказами -->
+                    <div class="main-grid-orders main-contener-sales-statistics">
+                        <!-- Orders section heading | Заголовок секции заказов -->
+                        <div class="contener-hedding-orders mini-text-none"> 
+                            <h1>Orders for <span class="positive">3600€</span></h1> 
+                            <!-- Additional heading with change indicator | Дополнительный заголовок с индикатором изменения -->
+                            <h2 class="more">More 26+</h2>
+                        </div>
+                        <!-- Orders grid layout | Сетка для отображения заказов -->
+                        <div class="orders-grid">
+                            
+                            <!-- Order card for Alexey | Карточка заказа для Алексея -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-0.png" alt="Alexey" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Alexey</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
+
+                            <!-- Order card for Svetlana | Карточка заказа для Светланы -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-1.png" alt="Svetlana" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Svetlana</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
+
+                            <!-- Order card for Matvey | Карточка заказа для Матвея -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-2.png" alt="Matvey" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Matvey</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
+
+                            <!-- Order card for Alexandra | Карточка заказа для Александры -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-3.png" alt="Alexandra" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Alexandra</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
+
+                            <!-- Order card for Anna | Карточка заказа для Анны -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-4.png" alt="Anna" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Anna</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
+
+                            <!-- Order card for Polina | Карточка заказа для Полины -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-5.png" alt="Polina" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Polina</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Second container for income analytics | Второй контейнер для аналитики доходов -->
+                    <div class="main-grid-income main-contener-sales-statistics">
+                        <!-- Income section heading with change indicator | Заголовок секции доходов с индикатором изменения -->
+                        <h1 id="income-title">Income <span class="dashboard-card-change positive" id="income-change">+26%</span></h1>
+                        
+                        <!-- Container for the income chart | Контейнер для графика доходов -->
+                        <div class="income-chart" id="income-chart">
+                            
+                            <!-- Chart column for day 14 | Колонка графика за день 14 -->
+                            <div class="chart-column" id="chart-day-14">
+                                <div class="bar" id="bar-14" style="height:60px;"></div>
+                                <span class="dashboard-card-change positive day" id="day-14">14</span>
+                                <span class="dashboard-card-change amount" id="amount-14">368€</span>
+                            </div>
+                            
+                            <!-- Chart column for day 15 | Колонка графика за день 15 -->
+                            <div class="chart-column" id="chart-day-15">
+                                <div class="bar" id="bar-15" style="height:80px;"></div>
+                                <span class="dashboard-card-change positive day" id="day-15">15</span>
+                                <span class="dashboard-card-change amount" id="amount-15">488€</span>
+                            </div>
+                            
+                            <!-- Chart column for day 16 | Колонка графика за день 16 -->
+                            <div class="chart-column" id="chart-day-16">
+                                <div class="bar" id="bar-16" style="height:100px;"></div>
+                                <span class="dashboard-card-change positive day" id="day-16">16</span>
+                                <span class="dashboard-card-change amount" id="amount-16">678€</span>
+                            </div>
+                            
+                            <!-- Chart column for day 17 | Колонка графика за день 17 -->
+                            <div class="chart-column" id="chart-day-17">
+                                <div class="bar" id="bar-17" style="height:70px;"></div>
+                                <span class="dashboard-card-change positive day" id="day-17">17</span>
+                                <span class="dashboard-card-change amount" id="amount-17">475€</span>
+                            </div>
+                            
+                            <!-- Chart column for day 18 (today) highlighted in red | Колонка графика за день 18 (сегодня) выделена красным -->
+                            <div class="chart-column" id="chart-day-18">
+                                <div class="bar" id="bar-18" style="height:50px;"></div>
+                                <span class="dashboard-card-change yes-today day" id="day-18">18</span>
+                                <span class="dashboard-card-change amount" id="amount-18">355€</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

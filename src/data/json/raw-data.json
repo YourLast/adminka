@@ -1,0 +1,114 @@
+{
+  "statistics": {
+    "todayRevenue": {
+      "value":  1060,
+      "currency": "€",
+      "id": "today-revenue",
+      "previousValue": 1000
+    },
+    "orders": {
+      "value": 36,
+      "id": "orders",
+      "changePercent": 26
+    },
+    "productsSoldToday": {
+      "value": 120,
+      "id": "products-sold-today",
+      "changePercent": 26
+    },
+    "websiteVisitorsToday": {
+      "value": 5400,
+      "id": "website-visitors-today",
+      "changePercent": 2
+    },
+    "ordersDetail": [
+      {
+        "image": "/src/img/profile/image-0.png",
+        "name": "Alexey",
+        "description": "Order for car rental"
+      },
+      {
+        "image": "/src/img/profile/image-1.png",
+        "name": "Maria",
+        "description": "Order for bike purchase"
+      }
+    ],
+    "chartData": [
+      {
+        "day": "14",
+        "amount": 368,
+        "change": {
+          "percent": 26,
+          "type": "increase"
+        }
+      },
+      {
+        "day": "15",
+        "amount": 450,
+        "change": {
+          "percent": 10,
+          "type": "increase"
+        }
+      },
+      {
+        "day": "16",
+        "amount": 650,
+        "change": {
+          "percent": 10,
+          "type": "increase"
+        }
+      },
+      {
+        "day": "17",
+        "amount": 1200,
+        "change": {
+          "percent": 10,
+          "type": "decrease"
+        }
+      }
+
+    ],
+    "taskList": [
+      {
+        "title": "Reset the settings",
+        "priority": "bad",
+        "href": "#"
+      },
+      {
+        "title": "Add a product card",
+        "priority": "normal",
+        "href": "#"
+      },
+      {
+        "title": "Review reports",
+        "priority": "good",
+        "href": "#"
+      },
+      {
+        "title": "Update user permissions",
+        "priority": "bad",
+        "href": "#"
+      }
+    ],
+    "lastActions": [
+      {
+        "title": "Mercedes-Benz V-Class Extra Long 250 d",
+        "description": "Price change"
+      },
+      {
+        "title": "Audi Q7 45 TDI",
+        "description": "New feature added"
+      }
+    ],
+    "news": [
+      {
+        "title": "Update V290.99",
+        "date": "03.05.2024"
+      },
+      {
+        "title": "New Feature Launch",
+        "date": "04.05.2024"
+      }
+    ]
+  }
+}

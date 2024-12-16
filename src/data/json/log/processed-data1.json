@@ -1,0 +1,222 @@
+{
+  "statistics": {
+    "todayRevenue": {
+      "value": 1600,
+      "currency": "€",
+      "id": "today-revenue",
+      "change": {
+        "percent": -27,
+        "type": "decrease"
+      }
+    },
+    "orders": {
+      "value": 36,
+      "id": "orders",
+      "change": {
+        "percent": 26,
+        "type": "increase",
+        "id": "orders-per"
+      }
+    },
+    "productsSoldToday": {
+      "value": 120,
+      "id": "products-sold-today",
+      "change": {
+        "percent": 26,
+        "type": "increase",
+        "id": "products-sold-today-per"
+      }
+    },
+    "websiteVisitorsToday": {
+      "value": 5400,
+      "id": "website-visitors-today",
+      "change": {
+        "percent": 2,
+        "type": "increase",
+        "id": "website-visitors-today-per"
+      }
+    },
+    "ordersSummary": {
+      "totalAmountId": "total-amount-orders",
+      "totalAmount": {
+        "value": 3600,
+        "currency": "€"
+      },
+      "moreOrders": "26+",
+      "moreOrdersId": "more-orders"
+    }
+  },
+  "ordersList": [
+    {
+      "image": "/img/profile/image-0.png",
+      "name": "Alexey",
+      "description": "Order for car rental",
+      "id": {
+        "name": "name-cart-1",
+        "description": "opisal-order-cart-1"
+      }
+    },
+    {
+      "image": "/img/profile/image-1.png",
+      "name": "Maria",
+      "description": "Order for bike purchase",
+      "id": {
+        "name": "name-cart-2",
+        "description": "opisal-order-cart-2"
+      }
+    }
+  ],
+  "chartData": [
+    {
+      "day": 14,
+      "bar": {
+        "height": "61.33333333333333px",
+        "percent": 61,
+        "id": "bar-14"
+      },
+      "amount": {
+        "value": 368,
+        "currency": "€",
+        "id": "amount-14"
+      }
+    },
+    {
+      "day": 13,
+      "bar": {
+        "height": "81.66666666666667px",
+        "percent": 82,
+        "id": "bar-13"
+      },
+      "amount": {
+        "value": 490,
+        "currency": "€",
+        "id": "amount-13"
+      }
+    },
+    {
+      "day": 12,
+      "bar": {
+        "height": "100px",
+        "percent": 100,
+        "id": "bar-12"
+      },
+      "amount": {
+        "value": 600,
+        "currency": "€",
+        "id": "amount-12"
+      }
+    },
+    {
+      "day": 11,
+      "bar": {
+        "height": "50px",
+        "percent": 50,
+        "id": "bar-11"
+      },
+      "amount": {
+        "value": 300,
+        "currency": "€",
+        "id": "amount-11"
+      }
+    },
+    {
+      "day": 10,
+      "bar": {
+        "height": "40px",
+        "percent": 40,
+        "id": "bar-10"
+      },
+      "amount": {
+        "value": 240,
+        "currency": "€",
+        "id": "amount-10"
+      }
+    }
+  ],
+  "taskList": [
+    {
+      "title": "Process 22 orders",
+      "priority": "good",
+      "id": {
+        "title": "hdding-task-list-1",
+        "priority": "bal-for-task-list-1"
+      },
+      "href": "#"
+    },
+    {
+      "title": "Check 5 customer feedbacks",
+      "priority": "bad",
+      "id": {
+        "title": "hdding-task-list-2",
+        "priority": "bal-for-task-list-2"
+      },
+      "href": "#"
+    },
+    {
+      "title": "Review pending invoices",
+      "priority": "normal",
+      "id": {
+        "title": "hdding-task-list-3",
+        "priority": "bal-for-task-list-3"
+      },
+      "href": "#"
+    },
+    {
+      "title": "Prepare daily report",
+      "priority": "good",
+      "id": {
+        "title": "hdding-task-list-4",
+        "priority": "bal-for-task-list-4"
+      },
+      "href": "#"
+    }
+  ],
+  "lastActions": [
+    {
+      "title": "Mercedes-Benz V-Class Extra Long 250 d",
+      "description": "Price change",
+      "id": {
+        "title": "hedding-last-actions-1",
+        "description": "opisal-last-actions-1"
+      }
+    },
+    {
+      "title": "BMW X5 M Competition",
+      "description": "New stock added",
+      "id": {
+        "title": "hedding-last-actions-2",
+        "description": "opisal-last-actions-2"
+      }
+    },
+    {
+      "title": "Audi Q7 45 TFSI Quattro",
+      "description": "Discount applied",
+      "id": {
+        "title": "hedding-last-actions-3",
+        "description": "opisal-last-actions-3"
+      }
+    }
+  ],
+  "news": [
+    {
+      "title": "Update V290.99",
+      "date": "03.05.2024",
+      "id": {
+        "title": "hediing-post-news-1",
+        "date": "opisal-post-news-1"
+      }
+    },
+    {
+      "title": "Bug fixes V289.12",
+      "date": "30.04.2024",
+      "id": {
+        "title": "hediing-post-news-2",
+        "date": "opisal-post-news-2"
+      }
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2024-12-10T23:28:39.441Z",
+    "source": "analytics-server"
+  }
+}

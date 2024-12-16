@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminka | Product management</title>
+    <!-- Подключение основного CSS файла для страницы Home -->
+    <link rel="stylesheet" href="/src/css/home/index.css">
+    <script src="/src/js/main/load-main.js" defer></script>
+    <style>
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            grid-gap: 10px;
+            justify-content: start;
+        }
+
+        .button {
+            padding: 10px;
+            border: 1px solid #000;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .add-product {
+            grid-column: span 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <div class="button add-product">Add Product</div>
+        <div class="button">Import Product</div>
+        <div class="button">Export Products</div>
+        <div class="button">Categories</div>
+        <div class="button">Search</div>
+        <div class="button">Delete Product</div>
+        <div class="button">View Statistics</div>
+        <div class="button">Bulk Edit</div>
+        <div class="button">Mark as New</div>
+        <div class="button">Edit SEO</div>
+        <div class="button">Duplicate Product</div>
+    </div>
+</body>
+</html>
+
+<img src="/src/js/main/activite-header.js" alt="">

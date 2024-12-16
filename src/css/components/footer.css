@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer__bottom{
+    text-align: left !important;
+  }
+
+  .footer {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    padding: 16px;
+  }
+
+  .footer__container {
+    max-width: 1032px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Верхний блок подвала */
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Адаптивность: позволяет переносить элементы */
+    gap: 16px;
+  }
+
+  .footer__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__logo img {
+    width: 103px;
+    height: auto;
+  }
+
+  .footer__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__menu {
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap; /* Адаптивность: перенос ссылок */
+    justify-content: center;
+  }
+
+  .footer__menu-link {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s;
+  }
+
+  .footer__menu-link:hover {
+    color: #407bff;
+  }
+
+  .footer__right {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__lang-btn {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .footer__lang-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 8px;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 0;
+    display: none;
+    z-index: 10;
+  }
+
+  .footer__lang-list.active {
+    display: block;
+  }
+
+  .footer__lang-option {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer__lang-option:hover {
+    background: #f0f0f0;
+  }
+
+  /* Нижний блок подвала */
+
+  .footer__bottom-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .footer__menu-link {
+      font-size: 18px;
+    }
+
+    .footer__lang-btn {
+      font-size: 16px;
+    }
+
+    .footer__bottom-text {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer__top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer__nav {
+      order: 2;
+    }
+
+    .footer__menu {
+      gap: 8px;
+    }
+
+    .footer__lang-btn {
+      order: 3;
+      margin-top: 8px;
+    }
+  }

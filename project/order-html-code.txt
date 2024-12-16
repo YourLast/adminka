@@ -1,0 +1,44 @@
+                            <!-- Order card for Svetlana | Карточка заказа для Светланы -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-1.png" alt="Svetlana" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Svetlana</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
+
+                            <!-- Order card for Matvey | Карточка заказа для Матвея -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-2.png" alt="Matvey" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Matvey</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
+
+                            <!-- Order card for Alexandra | Карточка заказа для Александры -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-3.png" alt="Alexandra" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Alexandra</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
+
+                            <!-- Order card for Anna | Карточка заказа для Анны -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-4.png" alt="Anna" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Anna</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
+
+                            <!-- Order card for Polina | Карточка заказа для Полины -->
+                            <div class="order-card">
+                                <img src="/src/img/profile/image-5.png" alt="Polina" class="avatar">
+                                <div class="order-info">
+                                    <span class="name">Polina</span>
+                                    <span class="desc">Order for car rental</span>
+                                </div>
+                            </div>
