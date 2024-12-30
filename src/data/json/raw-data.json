@@ -1,10 +1,10 @@
 {
   "statistics": {
     "todayRevenue": {
-      "value":  1060,
+      "value":  1190,
       "currency": "€",
       "id": "today-revenue",
-      "previousValue": 1000
+      "previousValue": 1200 
     },
     "orders": {
       "value": 36,

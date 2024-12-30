@@ -49,4 +49,4 @@ async function fetchDataAndUpdate() {
 
 // Начальная загрузка
 fetchDataAndUpdate();
-setInterval(fetchDataAndUpdate, 1000000);
+setInterval(fetchDataAndUpdate, 1000);

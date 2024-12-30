@@ -1,3 +1,21 @@
 .inter{
     font-family: "Inter", sans-serif !important;
 }
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 300; /* Light */
+    color: #000;
+}
+
+h1{
+    margin: 0;
+}
+
+a {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: inherit; /* Наследует цвет текста от родителя */
+    cursor: default; /* Убирает эффект "руки" при наведении */
+    font-weight: inherit; /* Наследует стиль шрифта */
+    font-size: inherit; /* Наследует размер шрифта */
+}

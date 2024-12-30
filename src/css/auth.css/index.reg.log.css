@@ -1,0 +1,113 @@
+.main-contener-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.main-contener-hedding{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.main-contener-sales-statistics{
+    max-width: 540px;
+}
+
+.content-main-log-reg{
+ align-items: center;
+ flex-direction: column;
+ display: flex;
+}
+
+.content-main-log-reg > h1{
+    width: max-content;
+}
+
+
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.contener-main-log-reg{
+    display: flex;
+    flex-direction: column;
+}
+
+.contener-main-log-reg input{
+    width: 100%;
+    padding: 16px 13px;
+    margin-bottom: 20px;
+    border: 0px solid #cccccc00;
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 15px;
+}
+.contener-object-content{
+    max-width: 335px;
+    width: 100%;
+}
+
+.btn{
+    width: 100%;
+    padding: 16px 13px !important;
+    border-radius: 10px !important;
+}
+
+.a-sign-up{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+
+.bth-edit-profil {
+    position: absolute;
+    bottom: 5px; /* Расположение кнопки снизу */
+    right: 5px; /* Расположение кнопки справа */
+    background-color: #5C8CFA;
+    color: #fff;
+    border: 1px solid #5A94FF;
+    border-radius: 50%; /* Делаем кнопку круглой */
+    width: 30px; /* Размер кнопки */
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.photo-profile {
+    background-color: #ccc; /* Цвет фона для фото профиля */
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Делаем фото круглым */
+    position: relative;
+    cursor: pointer; /* Делаем всю область кликабельной */
+}
+
+.contener-photo-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px; /* Задаём ширину контейнера */
+    height: 100px; /* Задаём высоту контейнера */
+}
+
+.main-contener-profil-registration{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
